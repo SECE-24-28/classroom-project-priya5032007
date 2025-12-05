@@ -1,12 +1,11 @@
-import React from 'react';
-import './App.css';
-import PlacementSection from './components/placement-section/PlacementSection';
+import React from "react";
+import ImpactSection from "./ImpactSection";
 
 function App() {
   return (
-    <div className="App">
-      <PlacementSection />
-    </div>
+    <>
+      <ImpactSection />
+    </>
   );
 }
 

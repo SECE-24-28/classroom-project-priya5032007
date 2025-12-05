@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #eae9ea;
+}
+
+.impact-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.impact-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.impact-title span {
+  color: #ff2d55;
+}
+
+.impact-grid {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.impact-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.impact-card h3 {
+  font-size: 20px;
+  margin: 0 0 5px;
+  font-weight: 500;
+}
+
+.impact-card p {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.icon {
+  font-size: 60px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pink { background: #ffe5e9; }
+.blue { background: #dceeff; }
+.green { background: #e3ffe9; }
+.peach { background: #ffe8d6; }
+
+@media (max-width: 768px) {
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+}
