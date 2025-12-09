@@ -1,37 +1,40 @@
 import React from "react";
 import { TrustedByStyle } from "./trusted-by-style";
-import { faBuildingColumns } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const TrustedbyComponent = () => {
   return (
     <TrustedByStyle>
-      <h1>Trusted By</h1>
-      <div className="parent">
-        <div className="child">
-          <FontAwesomeIcon icon={faBuildingColumns} />
+      <div className="trusted-container">
+        <h1 className="trusted-title">Impact at a Glance</h1>
+        
+        <div className="stats-grid">
+          <div className="stat-card">
+            <div className="stat-icon">🏫</div>
+            <div className="stat-number">100+</div>
+            <div className="stat-label">Colleges</div>
+          </div>
 
-          <span className="numbers">100+</span>
-          <br></br>
-          <span className="details">Colleges</span>
-        </div>
-        <div className="child">
-          <span className="numbers">150</span>
-          <br></br>
-          <span className="details">Professional Trainers</span>
-        </div>
-        <div className="child">
-          <span className="numbers">1000+</span>
-          <br></br>
-          <span>Study Materials</span>
-        </div>
-        <div className="child">
-          <span className="numbers"> 100000+</span>
-          <br></br>
-          <span className="details">Students</span>
+          <div className="stat-card">
+            <div className="stat-icon">👨‍🎓</div>
+            <div className="stat-number">1,00,000</div>
+            <div className="stat-label">Students</div>
+          </div>
+
+          <div className="stat-card">
+            <div className="stat-icon">📚</div>
+            <div className="stat-number">1000+</div>
+            <div className="stat-label">Study Materials</div>
+          </div>
+
+          <div className="stat-card">
+            <div className="stat-icon">👨‍🏫</div>
+            <div className="stat-number">150</div>
+            <div className="stat-label">Professional Trainers</div>
+          </div>
         </div>
       </div>
     </TrustedByStyle>
   );
 };
+
 export default TrustedbyComponent;

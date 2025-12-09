@@ -1,26 +1,39 @@
 import styled from "styled-components";
+
 export const LeadersTomorrowStyle = styled.div`
-  /* display: flex;
-  justify-content: center; */
-  display: flex;
-  justify-content: center;
-  .capsule {
-    background-color: rgb(252, 41, 71);
-    border-radius: 200px;
-    width: 1400px;
-    padding: 2rem;
+  .leaders-container {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
   }
-  .heading {
-    color: white;
-    font-size: 32px;
-    color: white;
+
+  .leaders-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .leaders-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+  }
+
+  .cta-button {
+    background: white;
+    color: #667eea;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
     font-weight: 600;
-    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
   }
-  .sub__heading {
-    color: white;
-    font-weight: 500;
-    font-size: 20px;
-    text-align: center;
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   }
 `;

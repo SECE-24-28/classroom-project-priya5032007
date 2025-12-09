@@ -1,45 +1,64 @@
 import styled from "styled-components";
+
 export const SymbolOfExcellenceStyle = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .para {
-    max-width: 1500px;
+  .symbol-container {
+    padding: 60px 20px;
     text-align: center;
+    background-color: #ffffff;
   }
-  .element__two {
-    display: flex;
+
+  .main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  .vision-mission-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
-    max-width: 1280px;
-    @media (max-width: 920px) {
-      flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .vision, .mission {
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .vision h2, .mission h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .highlight-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 40px 0;
+  }
+
+  .course-title {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 768px) {
+    .vision-mission-container {
+      grid-template-columns: 1fr;
     }
-  }
-  .title {
-    text-align: center;
-    font-weight: 600;
-    font-size: 48px;
-  }
-  .para {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.8;
-    font-family: "Work Sans", sans-serif;
-    text-align: center;
-    color: rgb(86, 102, 131);
-  }
-  .sub__title {
-    color: rgb(243, 176, 79);
-    // border-left: 4px solid rgb(243, 176, 79);
-    border-left: 4px solid rgb(243, 176, 79);
-    padding-left: 0.5rem;
-  }
-  .details {
-    align-items: left;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.8;
-    /* border: 10px solid red; */
-    color: rgb(86, 102, 131);
   }
 `;

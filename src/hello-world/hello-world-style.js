@@ -1,32 +1,37 @@
 import styled from "styled-components";
+
 export const HelloWorldStyle = styled.div`
   .parent {
     display: flex;
-    flex-direction: column;
-    background-color: green;
-    //align-items: flex-start;
-    // align-items: center;
-    // align-items: flex-start;
-    //justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    //justify-content: space-evenly;
-    //justify-content: space-between;
-    //  justify-content: space-around;
-    gap: 20px;
     height: 100vh;
+    background-color: #f0f0f0;
   }
+
   .square__child {
-    width: 50px;
-    height: 50px;
-    background-color: yellow;
-  }
-  .square__rectangle {
     width: 100px;
     height: 100px;
-    background-color: aqua;
-    @media (max-width: 900px) {
-      // background-color: yellow;
-      display: none;
-    }
+    background-color: #3498db;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .square__child:hover {
+    transform: scale(1.1);
+  }
+
+  .square__rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: #e74c3c;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .square__rectangle:hover {
+    transform: scale(1.1);
   }
 `;

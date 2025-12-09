@@ -1,38 +1,54 @@
 import styled from "styled-components";
+
 export const TrustedByStyle = styled.div`
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  h1 {
+  .trusted-container {
+    padding: 60px 20px;
     text-align: center;
-    margin-bottom: 50px;
+    background-color: #f8f9fa;
   }
-  .parent {
-    display: flex;
-    justify-content: space-evenly;
-    // gap: 100px;
-  }
-  .numbers {
-    text-align: center;
-    font-size: 40px;
+
+  .trusted-title {
+    font-size: 2.5rem;
     font-weight: 700;
-    color: gray;
+    color: #333;
+    margin-bottom: 40px;
   }
-  .details {
-    text-align: center;
-    font-size: 20px;
-    color: gray;
-    font-weight: 500;
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
-  .child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
-    width: 230px;
-    height: 200px;
+
+  .stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .stat-icon {
+    font-size: 3rem;
+    color: #667eea;
+    margin-bottom: 15px;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .stat-label {
+    font-size: 1.1rem;
+    color: #666;
   }
 `;
