@@ -1,12 +1,21 @@
 import React from "react";
-import UsestateformComponent from "./useStateForm/use-state-component.jsx";
 
-const App = () => {
+// Import your components
+import UseEffectPracticeTwo from "./use-effect-practice/use-effect-practice-2.jsx";
+import UseEffectComponent from "./use-effect-practice/use-effect-practice.jsx";
+
+function App() {
   return (
     <div>
-      <UsestateformComponent />
+      <h1>UseEffect Practice</h1>
+      
+      <UseEffectPracticeTwo />
+      
+      <hr />
+
+      <UseEffectComponent />
     </div>
   );
-};
+}
 
 export default App;
